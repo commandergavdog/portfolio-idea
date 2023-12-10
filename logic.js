@@ -66,7 +66,7 @@ function runGame() {
     const exitButtons = document.getElementsByClassName("exit");    
     const iframe = document.getElementById("jsdos");
 
-    gameLauncher.onclick = function(){        
+    gameLauncher.ondblclick = function(){        
         primaryContainer.classList.add('display-none');
 
         iframeContainer.classList.remove('display-none');
