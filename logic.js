@@ -63,24 +63,22 @@ const gameLauncher = document.getElementById("game-launcher");
 function runGame() {
     const primaryContainer = document.getElementById("primary-container");
     const iframeContainer = document.getElementById("iframe-container");
-    const exitButton = document.getElementById("exit");
-
+    const exitButtons = document.getElementsByClassName("exit");    
     const iframe = document.getElementById("jsdos");
 
     gameLauncher.onclick = function(){        
         primaryContainer.classList.add('display-none');
 
         iframeContainer.classList.remove('display-none');
-        document.getElementById("jsdos").focus();
         iframe.focus();
-        
-        console.log(document.getElementById("jsdos").focus());
-
     }
 
-    exitButton.onclick = function() {
-        primaryContainer.classList.remove('display-none');
-        iframeContainer.classList.add('display-none');
+
+    for (var i = 0; i < exitButtons.length; i++) {
+        exitButtons[i].onclick = function() {
+            primaryContainer.classList.remove('display-none');
+            iframeContainer.classList.add('display-none');
+        };
     }
 }
 

@@ -393,8 +393,8 @@ body {
 	overflow: hidden;
 }
 
-.width-unset {
-	width: unset;
+.width-fit {
+	width: fit-content;
 }
 
 .z-10 {
