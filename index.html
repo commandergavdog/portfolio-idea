@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon"
+                href="https://win98icons.alexmeub.com/icons/png/windows_update_large-2.png">
+        <script src="./logic.js" defer></script>
+
+        <title>Blog Concept</title>
+</head>
+
+<body>
+        <div class="body-container">
+                <ul class="icon-container">
+
+                        <li class="icon text-small draggable prevent-select">
+                                <img src="https://win98icons.alexmeub.com/images/recycle_bin_empty-2.png" alt="icon"
+                                        width="40" height="40">
+                                <div class="text-white">Recycling Bin</div>
+                        </li>
+
+                        <li class="icon text-small draggable prevent-select"><img
+                                        src="https://win98icons.alexmeub.com/images/computer_explorer-2.png" alt="icon"
+                                        width="40" height="40">
+                                <div class="text-white">World Wide Web</div>
+                        </li>
+
+
+                        <li class="icon text-small draggable prevent-select"><img
+                                        src="https://win98icons.alexmeub.com/images/directory_closed-3.png" alt="icon"
+                                        width="40" height="40">
+                                <div class="text-white">Documents</div>
+                        </li>
+
+                        <li id="game-launcher" class="icon text-small draggable prevent-select"><img
+                                        src="https://win98icons.alexmeub.com/icons/png/appwizard-5.png" alt="icon"
+                                        width="40" height="40">
+                                <div class="text-white">Games</div>
+                        </li>
+                </ul>
+
+                <div class="main-column">
+
+                        <div id="primary-container" class="masonry-container">
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/fa379fbbddef6ad186d467cb0c07857a/tumblr_nfbjccGzg11qlo26bo1_540.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/76603b5f365876360f3c81111fdd13cb/tumblr_pbtmp0Tl6m1v3fm8oo1_400.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/89b48e8e6e3e6d68a210fb9427d7a43f/tumblr_mi47sp9vTT1rnfzmjo1_540.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/ec599b0d3c9d09f824285f8df8216c39/fd19fada02bc7d24-73/s540x810/ced46715a128a13056e3d11638f19dc2fbfd48b3.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/0e7e24ea6827fcd7be99abddcae23a10/a458a6976a95e9e8-36/s500x750/5887a0a760f2f1e9c6a132687ee186e22f1c9f03.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/6c7567fb06c370e2ba29c66e89236b5e/bfb0ff859ce078b5-ec/s500x750/429e9d83804c2a833cc048c05b1b92adb5e53068.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/658c420d8859635ad4532a16850aaaea/tumblr_mqeyuwx8q61sb52cwo1_500.jpg">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Posted 3 months ago with 862
+                                                                        notes</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <img class="masonry-img"
+                                                                                                src="https://64.media.tumblr.com/d76b9b2c26a734e94b4d9f1219e83ebb/536c296b35eeca8f-9f/s540x810/d4ed7dba9e32eff497667d1c6cfa98710f7f18b6.gifv">
+                                                                                </div>
+
+                                                                                <div
+                                                                                        class="row small-padding padding-bottom-0 text-small">
+                                                                                        naruto - Masashi Kishimoto:
+                                                                                </div>
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+
+
+
+
+
+
+
+                        </div>
+
+                        <div id="iframe-container" class="masonry-container display-none z-10">
+                                <!-- masonry item -->
+                                <div class="masonry-item borders-2 draggable relative width-unset">
+                                        <div class="gray-border column">
+                                                <!-- item head -->
+                                                <div class="column header cursor-grab">
+                                                        <div
+                                                                class="row small-gap space-between bg-blue-gradient small-padding">
+                                                                <div class="row small-gap text-white">
+                                                                        <img class="small-icon"
+                                                                                src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
+                                                                        <div class="item-title">Post - Notepad</div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div
+                                                                                class="row window-icons small-gap text-white">
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/question-icon.png">
+                                                                                </button>
+
+                                                                                <button class="windows-button">
+                                                                                        <img class="windows-icon"
+                                                                                                src="https://win98icons.alexmeub.com/images/close-icon.png">
+                                                                                </button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="row small-padding bg-gray">
+                                                                <div class="text-small">Enjoy Digger!</div>
+
+                                                        </div>
+                                                </div>
+
+                                                <!-- item content -->
+                                                <div class="row">
+                                                        <div class="column bg-white flex-1 borders-1">
+                                                                <div class="row small-padding text-small">frnk.lotion:
+                                                                </div>
+
+                                                                <div class="column">
+                                                                        <div
+                                                                                class="column border-left-gray small-margin">
+                                                                                <div
+                                                                                        class="small-padding padding-top-0">
+                                                                                        <iframe id="jsdos"
+                                                                                                frameborder="0"
+                                                                                                src="https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Foriginal%2F2X%2F2%2F24b00b14f118580763440ecaddcc948f8cb94f14.jsdos&anonymous=1"
+                                                                                                allowfullscreen>
+                                                                                        </iframe>
+
+                                                                                        <div id="exit"
+                                                                                        class="row align-center justify-center windows-button cursor-pointer prevent-select">
+                                                                                        EXIT</div>
+                                                                                </div>
+
+                                                                                <!-- <div
+                                                                                class="row small-padding padding-bottom-0 text-small">
+                                                                                naruto - Masashi Kishimoto:
+                                                                        </div> -->
+
+                                                                        </div>
+
+                                                                        <!-- bottom checkered -->
+                                                                        <div
+                                                                                class="row background-checkered small-height">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- right checkered  -->
+                                                        <div
+                                                                class="column small-width background-checkered justify-end">
+                                                                <div class="background-gray small-height">
+                                                                        <img src="./text-area.png"
+                                                                                class="width-100 height-auto">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+
+
+
+                <div class="start-bar row space-between small-padding">
+                        <div class="row medium-gap">
+                                <div class="start-button-wrapper">
+                                        <img class="start-button"
+                                                src="https://win98icons.alexmeub.com/images/start-button.png">
+                                </div>
+
+                                <div class="start-bar-window no-wrap ">☜(⌒▽⌒)☞</div>
+                        </div>
+
+                        <div class="row justify-center align-center">
+                                <div class="start-bar-window">Made by <a class="text-blue text-decoration-none"> Frank
+                                                Dominguez</a></div>
+                        </div>
+
+                </div>
+
+        </div>
+
+        <script>
+                window.onload = () => {
+                        // document.getElementById("jsdos").focus();
+
+                        window.addEventListener("message", (e) => {
+                                if (e.data.message === "dz-player-exit") {
+                                        document.getElementById("jsdos").style.display = "none";
+                                        alert("js-dos exited");
+                                }
+                        });
+                };
+        </script>
+
+</body>
+
+</html>
